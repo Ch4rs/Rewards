@@ -1,0 +1,18 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Login</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+    <ion-item>
+      <ion-label position="floating">Número</ion-label>
+      <ion-input type="number" #numero></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="floating">Password</ion-label>
+      <ion-input type="password"  #password></ion-input>
+    </ion-item>
+    <ion-button routerLink="/register" class="ion-margin-top" expand="block" >Register</ion-button>
+    <ion-button (click)="login(numero,password)" class="ion-margin-top" expand="block" >Login</ion-button>
+</ion-content>

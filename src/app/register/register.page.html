@@ -1,0 +1,32 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Register</ion-title>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/login"></ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+  <ion-item>
+    <ion-label position="floating">Nombre</ion-label>
+    <ion-input type="number" required #nombre></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label position="floating">Apellido Paterno</ion-label>
+    <ion-input type="number" required #apellido_paterno></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label position="floating">Apellido Materno</ion-label>
+    <ion-input type="number" required #apellido_materno></ion-input>
+  </ion-item>
+    <ion-item>
+      <ion-label position="floating">Número</ion-label>
+      <ion-input type="number" required #numero></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="floating">Password</ion-label>
+      <ion-input type="password" required #password></ion-input>
+    </ion-item>
+    <ion-button type="submit" class="ion-margin-top" expand="block" (click)="register(numero,password,nombre,apellido_paterno,apellido_materno)" >Register</ion-button>
+</ion-content>
